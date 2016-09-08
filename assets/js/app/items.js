@@ -370,7 +370,7 @@ var Items = (function() {
 		obj.$btnUpdateItem.click(function(){
 			if(tableItemsCurrentRowPos >= 0) {
 				tableItemsSelectedRowPos = tableItemsCurrentRowPos;
-				obj.$keyItems.fnBlur();
+				// obj.$keyItems.fnBlur();
 				var itemId = obj.$keyTableApi._('tr', {"filter":"applied"})[tableItemsSelectedRowPos][0];
 				obj.checkIfItemIdExists(itemId).always(function (itemIdExists){
 					if(itemIdExists >=1 ){

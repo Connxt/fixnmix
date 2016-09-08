@@ -50,12 +50,10 @@ var Login = (function() {
 							}
 							else if(userLevelId == obj.LOGIN_CASHIER){
 								obj.$errorMessage.empty().append("<p><i class='icon fa fa-ban'></i>You Don't Have Permission to access the system.</p>").fadeIn(1000);
-								setTimeout(function() {obj.$errorMessage.fadeOut(1000);}, 5000);
 							}
 						}
 						else{
 							obj.$errorMessage.empty().append("<p><i class='icon fa fa-ban'></i> Username and password did not match.</p>").fadeIn(1000);
-							setTimeout(function() {obj.$errorMessage.fadeOut(1000);}, 5000);
 						}
 							
 					}).always(function (){
